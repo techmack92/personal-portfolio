@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   /* font weight,font size/line height */
-  font-family: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
+  font: 300 11px/1.4 'Helvetica Neu', 'sans-serif';
   color: #c53d33ef;
   background: #260243;
   overflow: hidden;
