@@ -1,4 +1,25 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
+  margin: 0;
+  /* font weight,font size/line height */
+  font-family: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
+  color: #c53d33ef;
+  background: #260243;
+  overflow: hidden;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +31,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
