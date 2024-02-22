@@ -22,7 +22,7 @@ const About = () => {
             <div className='text-zone'>
                 <h1>
                     <AnimatedLetters
-                    letterClass={letterClass}
+                        letterClass={letterClass}
                         strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
                         index={15}
                     />
@@ -32,8 +32,6 @@ const About = () => {
                     naturally curious and love nothing more than discovering new ways to unleash my creative potential.</p>
                 <p>By day, you'll find me in the trenches as an IT Technician for a California state agency, but by night I'm on the hunt for a dynamic web development environment that 
                     not only challenges me but also allows me to leverage my strengths while I continue to grow + improve.</p>
-                <p>I'm all about embracing challenges + thrive in collaborative settings, so if you're a fellow developer looking to network or team up on exciting projects, count me in.
-                    Let's create something dope together!</p>
             </div>
 
             <div className='stage-cube-cont'>
