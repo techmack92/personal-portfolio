@@ -66,5 +66,11 @@
         border: 1px solid #dbce0e;
         float: right;
         border-radius: 4px;
+
+        &:hover {
+            background: #dbce0e;
+            color: #333;
+            cursor: pointer;
+        }
     }
 }

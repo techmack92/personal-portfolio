@@ -1,13 +1,6 @@
 import './index.scss'
-import LogoM from '../../../assets/images/logo-m.png'
-import { useRef } from 'react'
 
 const Logo = () => {
-    const bgRef = useRef();
-    const outlineLogoRef = useRef();
-    const solidLogoRef = useRef();
-
-
     return (
         <div className='logo-container'>
             <svg

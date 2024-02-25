@@ -1,11 +1,12 @@
-import Sidebar from '../Sidebar'
+import Navigation from '../Navigation'
+import Footer from '../Footer'
 import './index.scss'
 import { Outlet } from 'react-router-dom'
 
 const Layout = () => {
     return (
         <div className='App'>
-            <Sidebar/>
+            <Navigation/>
             <div className='page'>
                 <span className='tags top-tags'>&lt;body&gt;</span>
 
@@ -17,8 +18,9 @@ const Layout = () => {
                 <span className='bottom-tag-html'>&lt;/html&gt;</span>
                 </span>
             </div>
+            <Footer />
         </div>
     )
 }
 
-export default Layout;
+export default Layout

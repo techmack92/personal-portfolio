@@ -1,0 +1,29 @@
+ul {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    z-index: 4; 
+
+    li {
+        display: inline-block;
+        margin: 0 10px;
+
+        a {
+            padding: 7px 0;
+            display: block;
+            font-size: 40px;
+            line-height: 16px;
+
+            &:hover svg{
+                color: #dbce0e;
+            }
+        }
+    }
+}
