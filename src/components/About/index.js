@@ -3,15 +3,17 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngular, faHtml5, faCss3, faReact, faJsSquare, faGitAlt } from '@fortawesome/free-brands-svg-icons'
-
+import Avatar from '../../assets/images/Avatar.PNG'
 
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
+    const [showAvatar, setShowAvatar] = useState(false);
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
             setLetterClass('text-animate-hover')
+            setShowAvatar(true); // Set showAvatar state to true after animation completes            
         }, 3000);
 
         return () => clearTimeout(timeoutId); // Cleanup function
@@ -19,7 +21,7 @@ const About = () => {
 
     return (
         <div className='container about-page'>
-            <div className='text-zone'>
+            <div className='text-zone about-info'>
                 <h1>
                     <AnimatedLetters
                         letterClass={letterClass}
@@ -34,6 +36,10 @@ const About = () => {
                     not only challenges me but also allows me to leverage my strengths while I continue to grow + improve.</p>
             </div>
 
+            <div className='avatar-container'>
+                <img src={Avatar} alt='Avatar' className={`avatar ${showAvatar ? 'show' : ''}`} />
+            </div>
+            
             <div className='stage-cube-cont'>
                 <div className='cubespinner'>
                     <div className='face1'>

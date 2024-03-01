@@ -4,13 +4,12 @@
     height: 100%;
     position: absolute;
     top: 0;
-    z-index: 1000; // Ensure the navigation bar is above other content
+    z-index: 3;
     min-height: 500px;
 
     .logo {
         display: block;
         padding: 8px 0;
-        z-index: 1001; // Ensure the logo is above the navigation bar
 
         img {
             display: block;
@@ -32,15 +31,34 @@
         top: 50%;
         margin-top: -120px;
         width: 100%;
-        z-index: 1001; // Ensure the navigation links are above the navigation bar
-
-        .active {
-            svg {
-                color: #dbce0e; // Color for active icon
+    
+        a {
+            font-size: 22px;
+            color: #4d4d;
+            display: block;
+            line-height: 51px;
+            height: 51px;
+            position: relative;
+            text-decoration: none;
+    
+            i {
+                transition: all 0.3s ease-out;
             }
-
+    
+            &:hover {
+                color: #dbce0e;
+    
+                svg {
+                    opacity: 0;
+                }
+    
+                &:after {
+                    opacity: 1;
+                }
+            }
+    
             &:after {
-                content: attr(data-text); // Content after the link (e.g., 'HOME', 'ABOUT', 'CONTACT')
+                content: '';
                 font-size: 9px;
                 letter-spacing: 2px;
                 position: absolute;
@@ -51,47 +69,31 @@
                 opacity: 0;
                 transition: all 0.3s ease-out;
             }
-        }
-
-        a {
-            font-size: 22px;
-            color: #4d4d4e;
-            display: block;
-            line-height: 51px;
-            height: 51px;
-            position: relative;
-            text-decoration: none;
-
-            i {
-                transition: all 0.3s ease-out;
-            }
-
-            &:hover {
-                color: #dbce0e; // Color on hover
-
-                svg {
-                    opacity: 0; // Hide icon on hover
-                }
-
-                &:after {
-                    opacity: 1; // Show content after the link on hover
-                }
-            }
-
+    
             &:first-child {
                 &:after {
-                    content: 'HOME'; // Content after the first link
+                    content: 'HOME';
                 }
             }
-
-            // Additional styles for specific links
-            &.about-link:after {
+        }
+    
+        a.about-link {
+            &:after {
                 content: 'ABOUT';
             }
-
-            &.contact-link:after {
+        }
+    
+        a.contact-link {
+            &:after {
                 content: 'CONTACT';
             }
         }
+
+        a.active {
+            svg {
+                color: #dbce0e;
+            }
+        }
     }
+
 }
