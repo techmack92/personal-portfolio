@@ -79,13 +79,25 @@
     
         a.about-link {
             &:after {
-                content: 'ABOUT';
+                content: 'ABOUT ME';
+            }
+        }
+    
+        a.portfolio-link {
+            &:after {
+                content: 'PORTFOLIO';
             }
         }
     
         a.contact-link {
             &:after {
                 content: 'CONTACT';
+            }
+        }
+    
+        a.resume-link {
+            &:after {
+                content: 'RESUME';
             }
         }
 
